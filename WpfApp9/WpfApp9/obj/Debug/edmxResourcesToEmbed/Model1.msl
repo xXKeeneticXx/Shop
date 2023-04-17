@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ShopModelContainer" CdmEntityContainer="ShopEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="ShopModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Uslugi" ColumnName="Uslugi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ShopModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="ShopModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Dolz" ColumnName="Dolz" />
+          <ScalarProperty Name="log" ColumnName="log" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="Zayavki" ColumnName="Zayavki" />
+          <ScalarProperty Name="ID_sotryd" ColumnName="ID_sotryd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zakaz">
+      <EntityTypeMapping TypeName="ShopModel.Zakaz">
+        <MappingFragment StoreEntitySet="Zakaz">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zakaz1" ColumnName="Zakaz" />
+          <ScalarProperty Name="ID_sotryd" ColumnName="ID_sotryd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
